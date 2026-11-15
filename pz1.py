@@ -87,9 +87,9 @@ def first_even(b):
     low, high = 0, len(b) - 1
     while low <= high:
         mid = (low + high) // 2
-        if b[mid] % 2 == 1
+        if b[mid] % 2 == 1:
             low = mid + 1
-        else
+        else:
             if mid == 0 or b[mid - 1] % 2 == 1:
                 return mid
             high = mid - 1
